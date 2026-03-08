@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body{
-    background-image: url('media/images/bombsite.jpg');
+    background-image: url('../media/images/bombsite.jpg');
     background-size: cover;
     color: white;
     display: flex;
@@ -11,7 +11,7 @@ body{
 }
 
 body.assault{
-    background-image: url('media/images/assault.jpg');
+    background-image: url('../media/images/assault.jpg');
 }
 
 .screen {
