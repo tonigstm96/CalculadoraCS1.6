@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body{
+    background-image: url('media/images/bombsite.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+body.assault{
+    background-image: url('media/images/assault.jpg');
+}
+
 .screen {
     height: 50px;
     width: 150px;
@@ -5,12 +21,119 @@
 }
 
 .keys {
-    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
 }
 
 .btn,
-.operator {
-    width: 50px;
+.operator,
+.dot,
+.equals, 
+.erase {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2c2f33;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.operator{
+    background-color: grey;
+}
+
+.equals{
+    background-color: red;
+}
+
+.erase{
+    background-color: #b8860b;
+}
+
+.container{
+    background-color: #2c2f33;
+    padding: 25px;
+    border-radius: 8px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+.screen {
+    height: 60px;
+    width: 235px;
+    background-color: #111;
+    color: red;
+    font-family: 'VT323', monospace;
+    font-size: 3rem;
+    text-align: right;
+    padding: 10px;
+    border: 3px solid #222;
+    border-radius: 4px;
+    outline: none;
+}
+
+.btn:active, .operator:active, .dot:active, .equals:active, .erase:active {
+    box-shadow: 0 0 #111;
+    transform: translateY(4px);
+}
+
+.cables-c4 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cable {
+    width: 15px;
     height: 50px;
-    margin-bottom: 5px;
+}
+
+.cable.lila{
+    background-color: purple;
+}
+
+.cable.blanco{
+    background-color: white;
+}
+
+.cable.verde{
+    background-color: green;
+}
+
+.cable.azul{
+    background-color: blue;
+}
+
+.cable.rojo{
+    background-color: red;
+}
+
+.c4{
+    background-color: #555b3f;
+    padding: 120px 45px;
+    border-radius: 10px;
+    border: 3px solid #3d422a;
+}
+
+.btn-mapa{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #2c2f33;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid grey;
+    border-radius: 4px;
+    cursor: pointer;
 }
