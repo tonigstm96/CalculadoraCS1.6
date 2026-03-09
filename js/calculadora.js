@@ -87,6 +87,9 @@ function calcular(e) {
     if (unOperador) {
         alert("Introduzca una operación correcta!")
     }
+    else if (pantalla.value == "") {
+        alert("No ha introducido valores!");
+    }
     else {  
         pantalla.value = eval(pantalla.value);
         unOperador = false;
