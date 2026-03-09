@@ -11,3 +11,7 @@ o clonar el repositorio utilizando el siguiente comando en Git Bash:
 
 
 ![Vista previa de la calculadora](media/images/pantalla.png)
+
+---
+
+![Modelo de c4 de CS 1.6(Inspiración)](media/images/c4.png)
