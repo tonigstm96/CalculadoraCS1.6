@@ -4,5 +4,8 @@ Se recomienda utilizar la calculadora con audio para observar su funcionalidad c
 
 ---
 
+Para acceder a la calculadora puedes entrar a
+<pre>https://tonigstm96.github.io/CalculadoraCS1.6/</pre>
+
 
 ![Vista previa de la calculadora](media/images/pantalla.png)
